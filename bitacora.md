@@ -16,3 +16,15 @@ Archivos verificados: datasets/finanzas_mensuales.csv, notebooks/02_analisis_exp
 
 ### Regla IA que estoy usando
 Primero pienso yo, después pido pista a la IA, después verifico ejecutando. Nunca acepto código sin explicarlo.
+## HORA 7 - Semana 02 · NumPy y arreglos - COMPLETADA 05/11/2026
+
+Práctica: Creé mi primer arreglo a = np.array([10, 20, 30, 40, 50]) con NumPy 2.5.4.
+Verifiqué a.shape = (5,), a.dtype = int64, a.sum() = 150.
+Operaciones: a + 10 = [20, 30, 40, 50, 60], a * 2 = [20, 40, 60, 80, 100], a.mean() = 30.0.
+
+Aprendizajes:
+1. Aprendí que un arreglo es una estructura de datos, en el caso de NumPy sin comas.
+2. Aprendí que NumPy sirve para la computación científica.
+3. Todavía me cuesta las entradas a la terminal vía New Terminal, pero ya me automatizaré al respecto.
+
+IA: Pedí guía paso a paso a Meta AI, ejecuté cada comando en mi entorno y verifiqué los resultados yo mismo.
