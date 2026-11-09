@@ -28,3 +28,17 @@ Aprendizajes:
 3. Todavía me cuesta las entradas a la terminal vía New Terminal, pero ya me automatizaré al respecto.
 
 IA: Pedí guía paso a paso a Meta AI, ejecuté cada comando en mi entorno y verifiqué los resultados yo mismo.
+## HORA 8 - Semana 02 · NumPy y arreglos - COMPLETADA 09/11/2026
+
+Práctica guiada: Ejemplo de finanzas con NumPy.
+Creé ingresos = np.array([1200, 1350, 1100, 1500, 1400]) y gastos = np.array([900, 1000, 950, 1100, 1050]).
+Calculé ahorro = ingresos - gastos y salió [300 350 150 400 350].
+Verifiqué ahorro.sum() = 1550 (total ahorrado en 5 meses) y ahorro.mean() = 310.0 (promedio por mes).
+Entendí int64 = entero en 64 bits sin decimales, float64 = número con decimales en 64 bits, con unos 15 dígitos de precisión, no 64 decimales.
+
+Aprendizajes:
+1. Aprendí que NumPy se puede usar a la manera de nuestro ejemplo guiado en finanzas.
+2. Aprendí que for no es necesario en estos casos porque aunque trabajamos con Python, tenemos las ventajas de abreviación de trabajo de NumPy para estos casos.
+3. Todavía me cuesta cosas elementales como discernir que podía usar la terminal sin incidencia en lo que llamaste el editor, que espero que se me grabe en la memoria, que así se llama precisamente ese sector de VS Code.
+
+IA: Pedí guía paso a paso a Meta AI, ejecuté cada comando en mi entorno y verifiqué los resultados yo mismo.
