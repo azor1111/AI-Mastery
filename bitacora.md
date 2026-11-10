@@ -42,3 +42,17 @@ Aprendizajes:
 3. Todavía me cuesta cosas elementales como discernir que podía usar la terminal sin incidencia en lo que llamaste el editor, que espero que se me grabe en la memoria, que así se llama precisamente ese sector de VS Code.
 
 IA: Pedí guía paso a paso a Meta AI, ejecuté cada comando en mi entorno y verifiqué los resultados yo mismo.
+## HORA 9 - Semana 02 · NumPy y arreglos - COMPLETADA 09/11/2026
+
+Práctica sin copiar: Ventas de tienda con NumPy.
+Creé ventas = np.array([250, 400, 180, 500, 320, 280]).
+Verifiqué ventas.sum() = 1930 (total), ventas.mean() = 321.666... (promedio), ventas.max() = 500 (mayor), ventas.min() = 180 (menor).
+Verifiqué ventas > 300 = [False True False True True False] y (ventas > 300).sum() = 3 días mayores a 300.
+Errores que aprendí: mean(ventas) solo da NameError porque mean solo no existe, tiene que ser ventas.mean(). ventas.ventas da AttributeError porque es ventas una sola vez.
+
+Aprendizajes:
+1. Aprendí que sum() es de Python, pero que .sum() es de NumPy.
+2. Aprendí que siguiendo la práctica .max(), .min() y > 300 por ejemplo, generan el máximo, el mínimo y los mayores que 300 en booleanos de un array.
+3. Todavía me cuesta en este caso arrancar con el import de NumPy, pero ya empecé a automatizarme al respecto.
+
+IA: Pedí guía paso a paso a Meta AI, resolví la práctica yo mismo sin copiar la solución, ejecuté cada comando en mi entorno y verifiqué los resultados yo mismo.
