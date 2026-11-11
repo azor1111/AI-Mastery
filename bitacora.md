@@ -56,3 +56,19 @@ Aprendizajes:
 3. Todavía me cuesta en este caso arrancar con el import de NumPy, pero ya empecé a automatizarme al respecto.
 
 IA: Pedí guía paso a paso a Meta AI, resolví la práctica yo mismo sin copiar la solución, ejecuté cada comando en mi entorno y verifiqué los resultados yo mismo.
+## HORA 10 - COMPLETADA el 11/11/2026
+- Semana 02 · NumPy y arreglos - Sesión 4: Aplicar numpy y arreglos a un pequeño problema.
+- Problema de finanzas, resuelto solo:
+  ingresos = np.array([1200, 1350, 1100, 1500, 1400])
+  gastos = np.array([900, 1000, 950, 1100, 1050])
+  ahorro = ingresos - gastos -> [300 350 150 400 350]
+  ahorro.sum() -> 1550 total ahorrado
+  ahorro.mean() -> 310.0 promedio por mes
+  ahorro.max() -> 400 mes que más ahorró
+  ahorro.min() -> 150 mes que menos ahorró
+  ahorro > 300 -> [False True False True True]
+  (ahorro > 300).sum() -> 3 meses ahorraron más de 300
+- Mis 3 aprendizajes HORA 10:
+    1. Aprendí a automatizarme más, usando .max(), .min() y sobre todo (ahorro > 300).sum().
+    2. Hice el problema completo de ahorro, total, promedio, mayor, menor y cuántos meses superaron 300.
+    3. En la terminal me siguió costando ingresar a .venv.
