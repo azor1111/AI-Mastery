@@ -72,3 +72,25 @@ IA: Pedí guía paso a paso a Meta AI, resolví la práctica yo mismo sin copiar
     1. Aprendí a automatizarme más, usando .max(), .min() y sobre todo (ahorro > 300).sum().
     2. Hice el problema completo de ahorro, total, promedio, mayor, menor y cuántos meses superaron 300.
     3. En la terminal me siguió costando ingresar a .venv.
+    ## HORA 11 - COMPLETADA el 11/11/2026
+- Semana 02 · NumPy y arreglos - Sesión 5: Consolidación de NumPy y manejo de arreglos.
+- Problema A - Finanzas nuevas, resuelto solo:
+  ingresos = np.array([3000, 3500, 3200, 4000, 3800])
+  gastos = np.array([2100, 2400, 2200, 2600, 2500])
+  ahorros = ingresos - gastos -> [900 1100 1000 1400 1300]
+  ahorros.sum() -> 5700 total ahorrado
+  ahorros.mean() -> 1140.0 promedio por mes
+  ahorros.max() -> 1400 mes que más ahorró
+  ahorros.min() -> 900 mes que menos ahorró
+  ahorros[ahorros > 1000] -> [1100 1400 1300] = seleccionar cuáles superaron 1000
+- Problema B - Ventas nuevas, resuelto solo:
+  ventas = np.array([1200, 1800, 950, 2200, 1600, 800])
+  ventas.sum() -> 8550 total
+  ventas.mean() -> 1425.0 promedio
+  ventas.max() -> 2200 venta más alta
+  ventas[ventas > 1500] -> [1800 2200 1600] = seleccionar cuáles superaron 1500
+- Concepto nuevo: seleccionar con máscara. (ahorros > 1000).sum() dice cuántos, ahorros[ahorros > 1000] dice cuáles son.
+- Mis 3 aprendizajes HORA 11:
+    1. Aprendí a automatizar mis inicios de sesión en VS Code para usar python.
+    2. Aprendí el modo de seleccionar información numérica mediante los signos de mayor o menor que.
+    3. Estoy aprendiendo que debo coordinar las horas de estudio unificando proyecto de estudio de chatgpt con meta ai.
