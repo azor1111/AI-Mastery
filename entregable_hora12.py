@@ -1,0 +1,23 @@
+import numpy as np
+
+ahorros = np.array([900, 1100, 1000, 1400, 1300])
+ventas = np.array([1200, 1800, 950, 2200, 1600, 800])
+print("--- AHORROS ---")
+print("Total:", ahorros.sum())
+print("Promedio:", ahorros.mean())
+print("Mayor ahorro:", ahorros.max())
+print("Menor ahorro:", ahorros.min())
+print("--- VENTAS ---")
+print("Total:", ventas.sum())
+print("Promedio:", ventas.mean())
+print("Mayor venta:", ventas.max())
+print("Menor venta:", ventas.min())
+print("--- AHORROS MAYORES A 1000 ---")
+print("Cuantos:", (ahorros > 1000).sum())
+print("Cuales:", ahorros[ahorros > 1000])
+
+print("--- VENTAS MAYORES A 1500 ---")
+print("Cuantas:", (ventas > 1500).sum())
+print("Cuales:", ventas[ventas > 1500])
+print("--- CONCLUSION ---")
+print(f"Mi peor resultado fue la venta de 800, porque es la venta mas baja y esta por debajo del promedio de {ventas.mean()}.")

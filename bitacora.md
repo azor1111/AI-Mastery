@@ -94,3 +94,9 @@ IA: Pedí guía paso a paso a Meta AI, resolví la práctica yo mismo sin copiar
     1. Aprendí a automatizar mis inicios de sesión en VS Code para usar python.
     2. Aprendí el modo de seleccionar información numérica mediante los signos de mayor o menor que.
     3. Estoy aprendiendo que debo coordinar las horas de estudio unificando proyecto de estudio de chatgpt con meta ai.
+    Mis 3 aprendizajes HORA 12:
+1. Aprendí a hacer un entregable completo en un archivo .py y correrlo desde PowerShell, no solo en notebook.
+2. Aprendí que una máscara devuelve True/False, .sum() dice CUÁNTOS y array[mascara] dice CUÁLES.
+3. Aprendí a combinar condiciones con & y a usar f-string con {ventas.mean()} para que el texto se actualice solo.
+Qué sugerencia de la IA acepté y por qué: Acepté usar {ventas.mean()} en la conclusión porque así no tengo que corregir el número a mano si cambian los datos.
+Qué sugerencia rechacé y por qué: No rechacé ninguna, la única sugerencia fue la del f-string y la acepté.
