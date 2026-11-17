@@ -100,3 +100,7 @@ IA: Pedí guía paso a paso a Meta AI, resolví la práctica yo mismo sin copiar
 3. Aprendí a combinar condiciones con & y a usar f-string con {ventas.mean()} para que el texto se actualice solo.
 Qué sugerencia de la IA acepté y por qué: Acepté usar {ventas.mean()} en la conclusión porque así no tengo que corregir el número a mano si cambian los datos.
 Qué sugerencia rechacé y por qué: No rechacé ninguna, la única sugerencia fue la del f-string y la acepté.
+Mis 3 aprendizajes HORA 13:
+1. Aprendí a leer un CSV real con pd.read_csv() y guardarlo en df, con mis columnas reales: mes, ingresos, gastos, ahorro.
+2. Aprendí que df.shape y df.dtypes son atributos sin paréntesis, y que en pandas 3.1.1 el texto es str, no object.
+3. Aprendí que df[df["ingresos"] > 3500] me devuelve filas enteras, y que con & puedo combinar dos condiciones, ej: ingresos > 3500 y ahorro > 800 me dio 3 meses: Junio, Septiembre y Octubre.
