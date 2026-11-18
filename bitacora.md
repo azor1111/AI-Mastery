@@ -104,3 +104,21 @@ Mis 3 aprendizajes HORA 13:
 1. Aprendí a leer un CSV real con pd.read_csv() y guardarlo en df, con mis columnas reales: mes, ingresos, gastos, ahorro.
 2. Aprendí que df.shape y df.dtypes son atributos sin paréntesis, y que en pandas 3.1.1 el texto es str, no object.
 3. Aprendí que df[df["ingresos"] > 3500] me devuelve filas enteras, y que con & puedo combinar dos condiciones, ej: ingresos > 3500 y ahorro > 800 me dio 3 meses: Junio, Septiembre y Octubre.
+HORA 14: Semana 03 · Pandas - Limpieza y orden de datos - COMPLETADA el 18/11/2026
+- Archivo: datasets/finanzas_mensuales.csv
+- Notebook: notebooks/03_pandas_finanzas.ipynb
+- Cargué con: import pandas as pd / df = pd.read_csv("../datasets/finanzas_mensuales.csv")
+- El ../ fue necesario porque el notebook está dentro de notebooks/ y tiene que subir un nivel para encontrar datasets/
+- 1) Vacíos: df.isnull().sum() -> mes 0, ingresos 0, gastos 0, ahorro 0. No hay valores vacíos.
+- 2) Duplicados: df.duplicated().sum() -> np.int64(0). No hay filas duplicadas.
+- Al principio puse df.duplicated() y df.sum() en dos líneas separadas y solo me mostró el df.sum(). Aprendí que en el notebook solo muestra la última línea, hay que ponerlo junto: df.duplicated().sum()
+- 3) drop_duplicates(): lo revisé, no había nada que borrar porque había 0 duplicados.
+- 4) Ordenar: df.sort_values(by="ahorro", ascending=False)
+- Al principio puse df.sort_values(900, 4000) y dio error porque sort_values ordena por nombre de columna, no por números sueltos.
+- Resultado ordenado de mayor a menor: Abril 900, Junio 900, Septiembre 900, Octubre 900, Enero 800, Agosto 800, Febrero 700, Marzo 700, Mayo 500, Julio 500.
+- Verificación: empieza en 900 y termina en 500. Los índices de la izquierda (3, 5, 8, 9...) son los originales, no se borran al ordenar.
+- Problemas de hoy: VS Code se actualizó a 1.147 y dejó la terminal en blanco con 4 powershell colgadas. Lo arreglé con PowerShell fuera de VS Code y con Developer: Reload Window para que Jupyter volviera a abrir el notebook.
+- Mis 3 aprendizajes HORA 14:
+    1. Aprendí que isnull() busca nulos y duplicated() busca los duplicados.
+    2. Aprendí que sort_values(by="ahorro", ascending=False) entrega los números de ahorro en orden descendente.
+    3. Lo que más me costó hoy fue activar la terminal.
