@@ -122,3 +122,23 @@ HORA 14: Semana 03 · Pandas - Limpieza y orden de datos - COMPLETADA el 18/11/2
     1. Aprendí que isnull() busca nulos y duplicated() busca los duplicados.
     2. Aprendí que sort_values(by="ahorro", ascending=False) entrega los números de ahorro en orden descendente.
     3. Lo que más me costó hoy fue activar la terminal.
+    ## Hora 15 - Consolidación de limpieza y orden de datos
+Semana 3 - Pandas
+
+### Repaso Hora 14
+- isnull(): busca datos nulos.
+- duplicated(): busca datos duplicados.
+- drop_duplicates(): elimina los duplicados.
+- sort_values(): ordena datos en ascendente o descendente.
+
+### Práctica de hoy
+- Verifiqué que df no tenía duplicados: duplicated().sum() = 0
+- Creé un duplicado a propósito con df_prueba y verifiqué que había 1 duplicado.
+- Eliminé el duplicado con drop_duplicates() y verifiqué que quedó en 0.
+- Ordené por ahorro de mayor a menor con sort_values(by='ahorro', ascending=False).
+- Mes con mayor ahorro: Abril.
+
+### 3 aprendizajes
+1. Aprendí mejor el uso de drop_duplicates() porque se creó un duplicado que se eliminó.
+2. Aprendí mejor el uso de ordenar las tablas de mayor a menor, o sea, voy automatizándome en ese sentido.
+3. Aprendí algo acerca de crear un duplicado, pero supongo que falta más automatizarme al respecto.
