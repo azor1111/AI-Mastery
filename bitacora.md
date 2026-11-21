@@ -142,3 +142,39 @@ Semana 3 - Pandas
 1. Aprendí mejor el uso de drop_duplicates() porque se creó un duplicado que se eliminó.
 2. Aprendí mejor el uso de ordenar las tablas de mayor a menor, o sea, voy automatizándome en ese sentido.
 3. Aprendí algo acerca de crear un duplicado, pero supongo que falta más automatizarme al respecto.
+## HORA 16 — Filtrado y selección de datos con Pandas
+
+**Fecha:** 20 de noviembre de 2026
+**Archivo:** `datasets/finanzas_mensuales.csv`
+**Notebook:** `notebooks/03_pandas_finanzas.ipynb`
+
+### Objetivo
+Aprender a seleccionar filas y columnas de un DataFrame y filtrar registros según condiciones.
+
+### Problemas resueltos
+1. El Kernel no arrancaba: `Failed to start the Kernel... timeout waiting for the ports`.
+   Solución: intentar arrancar con Run y luego reiniciar VS Code.
+2. `FileNotFoundError: datasets/finanzas_mensuales.csv`.
+   Solución: el notebook está dentro de `notebooks/`, la ruta correcta es `../datasets/finanzas_mensuales.csv`.
+
+### Lo que practiqué
+1. Cargar datos:
+```python
+import pandas as pd
+df = pd.read_csv("../datasets/finanzas_mensuales.csv")
+df.head()
+2. Seleccionar columnas:
+df[["mes", "ahorro"]]
+3. Filtrar filas con una condición:
+df[df["ahorro"] > 700]
+4. Combinar condiciones con & (Y):
+df[(df["ahorro"] > 700) & (df["ingresos"] > 3500)]
+5. Combinar condiciones con | (O):
+df[(df["ahorro"] < 600) | (df["mes"] == "Enero")]
+Aprendizajes
+Para seleccionar columnas se usan doble corchete [[ ]].
+Para filtrar filas se usa df[condición].
+Cada condición al combinar con & o | va entre paréntesis.
+& exige que se cumplan las 2 condiciones, | con que se cumpla 1 basta.
+Al filtrar, los índices originales se mantienen (0, 3, 5...), no se renumeran.
+
